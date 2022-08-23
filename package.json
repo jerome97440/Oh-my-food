@@ -1,0 +1,19 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css -w --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerome97440/Oh-my-food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerome97440/Oh-my-food/issues"
+  },
+  "homepage": "https://github.com/jerome97440/Oh-my-food#readme"
+}

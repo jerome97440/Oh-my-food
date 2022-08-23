@@ -1,0 +1,143 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-family: "roboto";
+}
+.composition{
+    padding: 15px;
+}
+.pointlogo{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(128 128 128 / 16%);
+    font-size: larger;
+    box-shadow: 0px 0px 5px 0px #504e4e80;
+    gap: 10px;
+    font-weight: bold;
+}
+.logo{
+ width: 150px;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+}
+.boxexplorer{
+ background-color: rgb(128 128 128 / 7%);
+ height: 300px;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+}
+h2{
+    padding: 2px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    background: linear-gradient(#ff93e1, #9356DC);
+    border-radius: 200px ;
+    border: 1px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    border:solid 0px;
+    border-radius: 10px;
+    width: 20px;
+    background-color: #9356DC;
+    color: white;
+    height: 20px;
+    margin-left: -18px;
+}
+.resto ,.menu,.deguster{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 0px;
+    border-radius: 20px;
+    background-color: rgb(16 15 15 / 3%);
+    box-shadow: 0px 0px 10px 0px rgb(80 78 78 / 50%);
+    margin-top: 20px;
+    padding: 10px;
+    gap: 30px;
+        cursor: pointer;
+                animation: loadmenu 2000ms;
+        }
+        
+        @keyframes loadmenu{
+            0% {
+                transform: scaleX(0);
+                opacity: .1;
+            }
+            100% {
+                transform: scaleX(1);
+            }
+        }
+    
+.cartes{
+    margin-top: 20px;
+    background-color: rgba(128,128,128,.07);
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 1600px;
+}
+.carte1{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.cartepalette{
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 10px 0px rgb(80 78 78 / 50%);
+    height: 350px;
+    margin-bottom: 20px;
+   
+}
+.textecarte{
+    position: absolute;
+    left: 75%;
+    margin-top: -230px;
+    display: flex;
+    color: green;
+    background-color: #99E2D0;
+    padding: 5px;
+}
+
+.marge{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.coeuradroite{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer{
+    height: 300px;
+    background-color: #00000099;
+    color: white;
+    padding-top: 20px
+}
+.foot{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: -15px;
+}
+.ohmyfood{
+    font-family: "shrikhand";
+    
+}
