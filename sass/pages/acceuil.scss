@@ -5,7 +5,7 @@ body{
     font-family: "roboto";
 }
 .composition{
-    padding: 15px;
+    padding: 20px;
 }
 .pointlogo{
     display: flex; 
@@ -19,6 +19,7 @@ body{
 }
 .logo{
  width: 150px;
+ padding: 20px;
 }
 .titre{
     display: flex;
@@ -45,17 +46,20 @@ h2{
     padding: 10px;
     color: white;
     cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 10px 0px rgb(62 60 60);
+    }
 }
 .circle{
     display: flex;
     justify-content: center;
-    border:solid 0px;
-    border-radius: 10px;
-    width: 20px;
+    align-items: center;
+    border-radius: 50px;
+    width: 30px;
     background-color: #9356DC;
     color: white;
-    height: 20px;
-    margin-left: -18px;
+    height: 30px;
+    margin-left: -25px;
 }
 .resto ,.menu,.deguster{
     display: flex;
@@ -68,20 +72,24 @@ h2{
     margin-top: 20px;
     padding: 10px;
     gap: 30px;
-        cursor: pointer;
-                animation: loadmenu 2000ms;
+cursor: pointer;
+    animation: menu 2000ms;
+&:hover {
+    background-color:rgb(255 147 225 / 17%);  
+    opacity: 1;
+    box-shadow: 0px 0px 10px 0px rgb(62 60 60);
+}
         }
-        
-        @keyframes loadmenu{
+       
+        @keyframes menu{
             0% {
-                transform: scaleX(0);
-                opacity: .1;
+                transform: scaley(0);
             }
             100% {
-                transform: scaleX(1);
+                transform: scaley(1);
             }
-        }
-    
+            
+    }
 .cartes{
     margin-top: 20px;
     background-color: rgba(128,128,128,.07);
@@ -117,7 +125,7 @@ h2{
 }
 
 .marge{
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 .coeuradroite{
@@ -139,5 +147,49 @@ h2{
 }
 .ohmyfood{
     font-family: "shrikhand";
-    
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3
+  }
+  
+  .fas{
+    opacity: 0;
+    transition-duration: 0.5s;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-text-fill-color: transparent;
+    
+  }
+  .fa-heart{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+.fa-heart{
+    font-size: 30px;
+}
+input:checked ~ .far {
+    transition-duration: 1s;
+    opacity: 0;
+  }
+  input:checked ~ .fas{
+    transition-duration: 1s;
+    opacity: 1;
+  }
+   .fa-utensils,.fa-handshake-angle {
+    padding-right: 10px;
+  }
