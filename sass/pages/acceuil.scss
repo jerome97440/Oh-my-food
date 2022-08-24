@@ -160,11 +160,12 @@ a{
     z-index: 3
   }
   
-  .fas{
-    opacity: 0;
-    transition-duration: 0.5s;
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    -webkit-text-fill-color: transparent;
+    .fas{
+        opacity: 0;
+        transition-duration: 0.5s;
+        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));/*ON DEFINI UN BACKGROUND*/
+        -webkit-background-clip: text;/*ON MET LE BACKGROUND SUR LE TEXTE*/
+        -webkit-text-fill-color: transparent;/*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
     
   }
   .fa-heart{
@@ -173,6 +174,7 @@ a{
     align-items: center;
     justify-content: center;
   }  
+  
 input{
     position: absolute;
     opacity: 0;
@@ -182,7 +184,7 @@ input{
 .fa-heart{
     font-size: 30px;
 }
-input:checked ~ .far {
+input:checked ~ .fa-regular {
     transition-duration: 1s;
     opacity: 0;
   }
