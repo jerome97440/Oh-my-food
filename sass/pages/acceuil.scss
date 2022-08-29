@@ -202,8 +202,8 @@ input:checked ~ .fa-regular {
     position: absolute;
     top: 0; left: 0; right: 0;bottom: 0;
   }
-  .boxspiner{ /*BUG A TESTER*/
-    background-color: rgb(0, 0, 0);
+  .boxspiner{ 
+    background-color: rgb(255, 255, 255);
     width: 100vw;
     height: 100vh;
     animation: newDeform 2.5s;
