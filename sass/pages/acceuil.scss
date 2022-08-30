@@ -30,15 +30,15 @@ body{
 }
 .boxexplorer{
  background-color: rgb(128 128 128 / 7%);
- height: 300px;
+ height: 330px;
  display: flex;
  flex-direction: column;
  text-align: center;
- padding-bottom: 20px;
 }
 h2,h3{
     padding: 12px;
     font-size: 20px;
+    margin-left: 10px;
 }
 .button{
     display: flex;
@@ -49,9 +49,9 @@ h2,h3{
     border-radius: 200px ;
     border: 1px;
     font-size: 20px;
-    margin-top: 20px;
     padding: 20px;
     color: white;
+    margin-top: 10px;
     cursor: pointer;
     &:hover {
         box-shadow: 0px 0px 10px 0px rgb(62 60 60);
@@ -123,6 +123,9 @@ cursor: pointer;
 p {
   margin-top: 10px;
 }
+.margetop{
+  margin-top: -10px;
+}
 .marge{
     padding-left: 20px;
     padding-right: 20px;
@@ -136,7 +139,7 @@ p {
     height: 300px;
     background-color: #00000099;
     color: white;
-    padding-top: 20px
+    padding-top: 20px;
 }
 .foot{
     display: flex;
@@ -156,7 +159,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3
+    z-index: 3;
+    margin-top: 20px;
+    margin-right: 10px;
   }
   
     .fas{

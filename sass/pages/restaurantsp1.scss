@@ -7,7 +7,7 @@ main{
     border-radius: 30px;
     margin-top: -40px;
     position: relative;
-    height: 1200px;
+    height: 1250px;
 }
 .pageacceuil{
     color: black;
@@ -25,6 +25,7 @@ main{
 .image2{
     width: 100%;
     object-fit: cover;
+    height: 300px;
 }
 h2{
     font-family: "shrikhand";
@@ -32,12 +33,14 @@ h2{
 .lapalette{
     display: flex;
     align-items: center;
-    justify-content:flex-start;
+    justify-content:space-evenly;
+    margin-right: 30px;
+    margin-left: -20px;
 }
 .card-icon{
     padding: 5px;
     position: relative;
-    margin-left: 90px;
+    margin-left: 100px;
     margin-top: -30px;
 }
 
@@ -114,7 +117,6 @@ input:checked ~ .icon i { // pour le rotation de l'icone
     margin-left: 0.5rem;  
 }
 button {
-    margin-top: 50px; 
     width: 75%; 
     align-self: center; // pour mettre le bouton au centre par rapport à son conteneur 
     &:hover {
