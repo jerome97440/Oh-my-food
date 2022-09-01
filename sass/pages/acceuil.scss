@@ -40,7 +40,7 @@ body{
 }
 h2,h3{
     padding: 12px;
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 10px;
 }
 .button{
@@ -221,6 +221,7 @@ input:checked ~ .fa-regular {
     position: fixed;
     animation-fill-mode: both;
     z-index: 30;
+    top:0px
 
   }
   @keyframes newDeform{
