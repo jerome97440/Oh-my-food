@@ -7,8 +7,9 @@ main{
     border-radius: 30px;
     margin-top: -40px;
     position: relative;
-    height: 1300px;
+    height: 1255px;
     top: 0;
+    padding-bottom: 30px;
 }
 .pageacceuil{
     color: black;
@@ -178,3 +179,16 @@ button {
   .description9 {
     animation-delay: 1.8s;
   }
+  .btn2{
+    background: linear-gradient(#ff93e1, #9356DC);
+    border-radius: 200px ;
+    border: 1px;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 25px;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 10px 0px rgb(62 60 60);
+    }
+}
