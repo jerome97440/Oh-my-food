@@ -1,4 +1,4 @@
-main{
+main {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -11,47 +11,56 @@ main{
     top: 0;
     padding-bottom: 30px;
 }
-.pageacceuil{
+
+.pageacceuil {
     color: black;
     font-size: 20px;
     margin-left: 30px;
 }
-.titre1{
+
+.titre1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-family: "shrikhand";
     margin-right: 40px;
 }
-.image2{
+
+.image2 {
     width: 100%;
     object-fit: cover;
     height: 300px;
 }
-h2{
+
+h2 {
     font-family: "shrikhand";
 }
-.lapalette{
+
+.lapalette {
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-right: 30px;
     margin-left: -20px;
 }
-.card-icon{
+
+.card-icon {
     padding: 5px;
     position: relative;
     margin-left: 100px;
     margin-top: -30px;
 }
-.traitbleu{
+
+.traitbleu {
     width: 3rem;
     height: 3px;
     background-color: #99E2D0;
     position: relative;
     margin-top: -14px;
 }
-.description {  // Cartes avec prix et description des menus 
+
+.description {
+    // Cartes avec prix et description des menus 
     display: flex;
     margin: 15px;
     background-color: white;
@@ -60,134 +69,158 @@ h2{
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0px 5px 20px #999;
-    opacity: 0; 
+    opacity: 0;
     animation: animLoad 1.6s forwards; // Animation quand on arrive sur la page
-    input { // on donne une largeur et une hauteur à l'input pour que celui-ci remplisse toute la carte description
+
+    input {
+        // on donne une largeur et une hauteur à l'input pour que celui-ci remplisse toute la carte description
         appearance: none;
         width: 93%;
         height: 5.1rem;
         border-radius: 1rem;
-        position: absolute; 
+        position: absolute;
         left: 3.5%;
         cursor: pointer;
-    } 
-}    
-    .icon { // Icones des bannieres "description"
-        width: 5rem;
-        margin-right: -5rem; // pour qu'il ne soit plus visible à l'écran
-        background-color:#99e2d0;
-        display: flex;
-        justify-content: center; // on le centre sur l'axe X
-        align-items: center; // on le centre sur l'axe Y
-        font-size: 1.5rem;
-        color: white;
-        transition-duration: 0.6s; 
-        i {
-            transition-duration: 0.6s;
-        } 
-    } 
-@for $i from 0 through 9 { // On utilise une boucle pour l'apparition des bannieres 
+    }
+}
+
+.icon {
+    // Icones des bannieres "description"
+    width: 5rem;
+    margin-right: -5rem; // pour qu'il ne soit plus visible à l'écran
+    background-color: #99e2d0;
+    display: flex;
+    justify-content: center; // on le centre sur l'axe X
+    align-items: center; // on le centre sur l'axe Y
+    font-size: 1.5rem;
+    color: white;
+    transition-duration: 0.6s;
+
+    i {
+        transition-duration: 0.6s;
+    }
+}
+
+@for $i from 0 through 9 {
+
+    // On utilise une boucle pour l'apparition des bannieres 
     .description#{$i} {
         animation-delay: ($i * 0.2s);
-    }    
-}         
+    }
+}
+
 @keyframes animLoad {
     0% {
-        
-       opacity: 0; // invisible avant l'animation      
+
+        opacity: 0; // invisible avant l'animation      
     }
+
     100% {
-        
+
         opacity: 1; // visible      
     }
 }
-input:checked ~ .icon { // quand on clique sur l'input, l'icone repasser à une marge à droite de 0.
+
+input:checked~.icon {
+    // quand on clique sur l'input, l'icone repasser à une marge à droite de 0.
     margin-right: 0;
     transition-duration: 0.6s;
 }
-input:checked ~ .icon i { // pour le rotation de l'icone
+
+input:checked~.icon i {
+    // pour le rotation de l'icone
     transform: rotate(360deg);
     transition-duration: 0.6s;
 }
-.card-price { // on positionne le prix en bas avec align-item: center 
+
+.card-price {
+    // on positionne le prix en bas avec align-item: center 
     display: flex;
     align-items: flex-end;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     margin-right: 30px;
-    margin-left: 0.5rem;  
+    margin-left: 0.5rem;
 }
+
 button {
-    width: 300px; 
+    width: 300px;
     align-self: center; // pour mettre le bouton au centre par rapport à son conteneur 
+
     &:hover {
         filter: brightness(1.1); // pour éclaircir le bouton 
         box-shadow: 4px 4px 10px rgb(0 0 0 / 45%);
-    }    
+    }
 }
-.card-text { 
-    width: 100%; 
+
+.card-text {
+    width: 100%;
     white-space: nowrap; // Pour que le texte ne revienne pas à la ligne quand il n'y a plus de place
     text-overflow: ellipsis; // pour que les points apparaissent quand le texte deborde sur un element
-    overflow: hidden;       
-    h4{
-        margin-left: 10px;    
+    overflow: hidden;
+
+    h4 {
+        margin-left: 10px;
         text-overflow: ellipsis; // pour que les points apparaissent quand le texte deborde sur un element
-        overflow: hidden; 
-        margin-bottom: 0; 
+        overflow: hidden;
+        margin-bottom: 0;
     }
+
     p {
         margin-top: 5px;
-        margin-left: 10px;   
-    }      
+        margin-left: 10px;
+    }
 }
+
 .description0 {
     animation-delay: 0s;
-  }
-  
-  .description1 {
+}
+
+.description1 {
     animation-delay: 0.2s;
-  }
-  
-  .description2 {
+}
+
+.description2 {
     animation-delay: 0.4s;
-  }
-  
-  .description3 {
+}
+
+.description3 {
     animation-delay: 0.6s;
-  }
-  
-  .description4 {
+}
+
+.description4 {
     animation-delay: 0.8s;
-  }
-  
-  .description5 {
+}
+
+.description5 {
     animation-delay: 1s;
-  }
-  
-  .description6 {
+}
+
+.description6 {
     animation-delay: 1.2s;
-  }
-  
-  .description7 {
+}
+
+.description7 {
     animation-delay: 1.4s;
-  }
-  
-  .description8 {
+}
+
+.description8 {
     animation-delay: 1.6s;
-  }
-  
-  .description9 {
+}
+
+.description9 {
     animation-delay: 1.8s;
-  }
-  .btn2{
+}
+
+.btn2 {
     background: linear-gradient(#ff93e1, #9356DC);
-    border-radius: 200px ;
+    border-radius: 200px;
     border: 1px;
     font-size: 20px;
     padding: 20px;
     margin-top: 25px;
     color: white;
     cursor: pointer;
+
     &:hover {
         box-shadow: 0px 0px 10px 0px rgb(62 60 60);
     }
