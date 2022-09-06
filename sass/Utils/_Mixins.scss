@@ -1,5 +1,0 @@
-@mixin tablete {
- @media screen and (max-width: map-get($breakpoints, tablete)){
-@content;
-}
-    }
