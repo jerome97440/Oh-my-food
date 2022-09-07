@@ -255,7 +255,7 @@ input:checked~.fas {
   background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
-  animation: newDeform 6s;
+  animation: newDeform 2.5s;
   position: fixed;
   animation-fill-mode: both;
   z-index: 30;
@@ -285,7 +285,7 @@ input:checked~.fas {
 }
 
 #spinner5 {
-  animation: deform 6s linear;
+  animation: deform 3s linear;
   animation-fill-mode: both;
 }
 
